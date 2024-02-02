@@ -201,6 +201,7 @@ The content of this project was written by Stephan Sure.
 
 - All content from Online Course in Full Stack Software Developmen especially videos about Portfolio Project 2 and ReadME from Code Instituet
 - Video about the Profolio project 2 https://www.youtube.com/watch?v=40vLxYUJiQY&list=PL_7334VduOHvzZYlgy_0kZLcic2NINCUt&index=6
+- https://www.youtube.com/watch?v=U9VF-4euyRo&t=831s - video about css and clamp function
 - https://stackoverflow.com/
 - https://www.w3schools.com/css/
 - geekforgeeks
