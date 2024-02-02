@@ -37,7 +37,7 @@ body {
     margin: 0 auto;
 }
 
-/* Styles the buttons */
+/* Styles the general buttons */
 #button-general {
     text-align: center;
     margin: 0 auto;
@@ -54,6 +54,33 @@ body {
     width: 250px;
     border-radius: 25px;
     text-align: center;
+}
+
+/* Styles the answer buttons */
+#button-answers {
+    text-align: center;
+    margin: 0 auto;  
+}
+
+.button-answers-style {
+    background-color: #0B34DE;
+    color: white;
+    padding: 5px 5px 5px 20px;
+    font-family: 'Lexend', sans-serif;
+    text-align: left;
+    font-size: clamp(3vh, 20px, 300px);
+    font-weight: 400;
+    margin: 20px;
+    width: 250px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.button-header {
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: clamp(3vh, 30px, 300px);
 }
 
 /* Styles the rules page */
