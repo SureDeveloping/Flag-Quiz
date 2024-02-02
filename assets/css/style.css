@@ -49,4 +49,21 @@ body {
     margin: 20px;
     width: 250px;
     border-radius: 25px;
+    text-align: center;
+}
+
+.container-rules {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.5vh, 35px, 200px);
+    background-color: #0B34DE;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+}
+
+.container-rules p {
+    text-align: justify;
 }
