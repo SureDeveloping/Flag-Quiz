@@ -81,8 +81,8 @@ Finally, I checked the contrast again with the page https://contrast-grid.eights
 ### Typography
 
 The fonts come from Googlefonds and were used for the following fonts:
-- PT Sans Narrow is used for headings on the site. It is a sans-serif font.
-- PT Sans is used for the body text on the site. It is a sans-serif font.
+- Rampart One is used for the main Headline "The flag Quiz". It is a sans-serif font.
+- Lexend is used for all other text on the site. It is a sans-serif font.
 
 ### Imagery
 
