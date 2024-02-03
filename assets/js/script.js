@@ -54,3 +54,23 @@ const flags = [
     "correct": 2
     } 
 ]
+
+const quizLength = flags.length;
+
+/**
+ * This function loads flags option, questions 
+ * @param {int} flagNumber
+ */
+function loadFlags(flagNumber) {
+  question.innerText = questions[flagNumber].question;
+}
+
+/**
+ * This function loads answers options into the answer buttons
+ * @param {int} flagNumber
+ */
+function loadAnswers(flagNumber) {
+    answer1.innerText = flags[flagNumber].answers[0];
+    answer2.innerText = flags[flagNumber].answers[1];
+    answer3.innerText = flags[flagNumber].answers[2];
+  }
