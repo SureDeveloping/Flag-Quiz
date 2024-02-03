@@ -31,23 +31,23 @@ function home(link) {
 // Flags with answer Options
 const flags = [
     {
-    "flag": "assets/images/great-britain-flag.webp"
+    "flag": "assets/images/great-britain-flag.webp",
     "answers": [
         "Spain", "Belgium", "Great Britain"
     ],
     "correct": 3
-    }
+    },
 
     {
-    "flag": "assets/images/germany-flag.webp"
+    "flag": "assets/images/germany-flag.webp",
     "answers": [
         "Germany", "Spain", "Sweden"
     ],
     "correct": 1
-    }
+    },
 
     {
-    "flag": "assets/images/netherlands-flag.webp"
+    "flag": "assets/images/netherlands-flag.webp",
     "answers": [
         "France", "Netherlands", "Great Britain"
     ],
