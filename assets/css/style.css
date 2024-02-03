@@ -99,3 +99,15 @@ body {
 .container-rules p {
     text-align: justify;
 }
+
+/* Styles the "Qestion" flag on the game page */
+.question-flag {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.question-flag img {
+    height: 40%;
+    width: 40%;
+}
