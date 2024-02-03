@@ -1,7 +1,19 @@
+
+let flagNumber = 0;
+
 /** Function starts the quiz by clicking on the corresponding button
  */
 function startQuiz(link) {
     location.href = "game.html";
+    loadflags(flagNumber);
+    loadanswers(flagNumber);
+}
+
+/** Function starts the next question, loads a flag and answers by clicking on the corresponding button
+ */
+function nextFlag() {
+    loadflags(flagNumber);
+    loadanswers(flagNumber);
 }
 
 /** Function opens the rules page by clicking on the corresponding button
