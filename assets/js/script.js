@@ -5,15 +5,18 @@ let flagNumber = 0;
  */
 function startQuiz(link) {
     location.href = "game.html";
-    loadflags(flagNumber);
-    loadanswers(flagNumber);
+    loadFlags(flagNumber);
+    loadAnswers(flagNumber);
 }
 
 /** Function starts the next question, loads a flag and answers by clicking on the corresponding button
  */
 function nextFlag() {
-    loadflags(flagNumber);
-    loadanswers(flagNumber);
+    loadFlags(flagNumber);
+    loadAnswers(flagNumber);
+    if (flagNumber < quizLength) {
+        flagNumber++;
+    }
 }
 
 /** Function opens the rules page by clicking on the corresponding button
@@ -53,7 +56,7 @@ const flags = [
     ],
     "correct": 2
     } 
-]
+];
 
 const quizLength = flags.length;
 
@@ -62,7 +65,7 @@ const quizLength = flags.length;
  * @param {int} flagNumber
  */
 function loadFlags(flagNumber) {
-  question.innerText = questions[flagNumber].question;
+    document.getElementById("flag").src = flags[flagNumber].flag;
 }
 
 /**
