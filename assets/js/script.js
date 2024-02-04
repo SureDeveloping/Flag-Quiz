@@ -6,6 +6,9 @@ let flagNumber = 0;
 function startQuiz(link) {
     loadFlags(flagNumber);
     loadAnswers(flagNumber);
+    if (flagNumber < quizLength) {
+        flagNumber++;
+    }
 }
 
 /** Function starts the next question, loads a flag and answers by clicking on the corresponding button
