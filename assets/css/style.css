@@ -53,6 +53,9 @@ body {
     width: 270px;
     border-radius: 25px;
     text-align: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
 }
 
 /* Styles the answer buttons */
@@ -73,7 +76,14 @@ body {
     width: 270px;
     border-radius: 25px;
     text-align: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
 }
+
+.button-answers-style:hover, .button-general-style:hover  {
+    border-color: #F0c808;
+  }
 
 .button-header {
     text-align: center;
