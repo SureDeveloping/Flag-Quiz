@@ -81,6 +81,8 @@ function loadAnswers(flagNumber) {
   const answer1 = document.getElementById('answer1');
   const answer2 = document.getElementById('answer2');
   const answer3 = document.getElementById('answer3');
+  const score = document.getElementById('score');
+  let scoreCount = 0;
 
 /**Function to check the clicked answer
  * @param {*} answerNumber 
@@ -93,6 +95,9 @@ function checkAnswer(answerNumber) {
        // if correct 
         alert("Thats right!");
         console.log("correctAnswer");
+        scoreCount++;
+        score.innerText = scoreCount;
+
     } else {
         alert("Thats wrong");
         console.log("Incorrect answer");
