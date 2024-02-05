@@ -87,6 +87,8 @@ The fonts come from Googlefonds and were used for the following fonts:
 ### Imagery
 
 Images used are from the site https://www.freepik.com/.
+Main Image is Designed by Ibrandify / Freepik
+The other Images are Designed by Allexxandar / Freepik
 
 ### Wireframe
 
