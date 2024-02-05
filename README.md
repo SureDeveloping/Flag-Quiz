@@ -205,6 +205,9 @@ The content of this project was written by Stephan Sure.
 - Video about the Profolio project 2 https://www.youtube.com/watch?v=40vLxYUJiQY&list=PL_7334VduOHvzZYlgy_0kZLcic2NINCUt&index=6
 - https://www.youtube.com/watch?v=U9VF-4euyRo&t=831s - video about css and clamp function
 - https://www.youtube.com/watch?v=eHPLTDOAggc - to lern how to make the buttons work
+- https://www.youtube.com/watch?v=riDzcEQbX6k - How to bulid a quizz with java script
+- https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF  - How to bulid a quizz with java script
+- https://www.youtube.com/watch?v=PBcqGxrr9g8 - How to bulid a quizz with java script
 - https://stackoverflow.com/
 - https://www.w3schools.com/css/
 - geekforgeeks
