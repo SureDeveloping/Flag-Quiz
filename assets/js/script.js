@@ -55,6 +55,94 @@ const flags = [
         "France", "Netherlands", "Great Britain"
     ],
     "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/albania-flag.webp",
+    "answers": [
+        "Great Britain", "Albania", "Spain"
+    ],   
+    "correct": 2
+    },
+
+    {
+    "flag": "assets/images/austria-flag.webp",
+    "answers": [
+            "Austria","Netherlands", "Spain"
+    ],
+    "correct": 1
+    },
+    
+    {
+    "flag": "assets/images/croatia-flag.webp",
+    "answers": [
+        "France", "Croatia", "Great Britain"
+    ],
+    "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/denmark-flag.webp",
+    "answers": [
+        "Denmark", "Spain", "Great Britain"
+    ],
+    "correct": 1
+    }, 
+
+    {
+    "flag": "assets/images/finland-flag.webp",
+    "answers": [
+        "France", "Netherlands", "Finland"
+    ],
+    "correct": 3
+    }, 
+
+    {
+    "flag": "assets/images/greece-flag.webp",
+    "answers": [
+        "France", "Greece", "Great Britain"
+    ],
+    "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/iceland-flag.webp",
+    "answers": [
+        "France", "Netherlands", "Iceland"
+    ],
+    "correct": 3
+    }, 
+
+    {
+    "flag": "assets/images/luxembourg-flag.webp",
+    "answers": [
+        "Malta", "luxembourg", "Iceland"
+    ],
+    "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/malta-flag.webp",
+    "answers": [
+        "Malta", "Greece", "Finland"
+    ],
+    "correct": 1
+    }, 
+
+    {
+    "flag": "assets/images/poland-flag.webp",
+    "answers": [
+        "Greece", "Poland", "Iceland"
+    ],
+    "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/sweden-flag.webp",
+    "answers": [
+        "Sweden", "Netherlands", "Spain"
+    ],
+    "correct": 3
     } 
 ];
 
