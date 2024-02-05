@@ -39,7 +39,7 @@ const flags = [
     "answers": [
         "Spain", "Belgium", "Great Britain"
     ],
-    "correct": 3
+    "correct": 2
     },
 
     {
