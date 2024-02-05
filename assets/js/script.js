@@ -14,6 +14,8 @@ function nextFlag() {
     if (flagNumber < quizLength) {
         loadFlags(flagNumber);
         loadAnswers(flagNumber);
+    } else {
+        alert('That was the last Question. If you would like to Play Again, press Quit and then Start the Quiz again.');
 }
 }
 
@@ -95,10 +97,14 @@ function checkAnswer(answerNumber) {
         alert("Thats wrong");
         console.log("Incorrect answer");
     }
+
     flagNumber++;
     if (flagNumber < quizLength) {
         loadFlags(flagNumber);
         loadAnswers(flagNumber);
+    } else {
+        alert('That was the last Question. If you would like to Play Again, press Quit and then Start the Quiz again.');
     }
 } 
+
   startQuiz();
