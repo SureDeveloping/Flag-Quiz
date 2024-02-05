@@ -184,6 +184,7 @@ JS
 
 ### Solved Bugs
 - After I clicked the start quiz button the games.html opened but the questions and answers were not loaded. I had the assumption that it is the browser that has to load the page first before it can load the functions for the flag and for the answers. So I first tried to solve this problem with setTimeout() and with a callback function. Waiting for the DOM was not successful either. Solution was to call the function in the JS below and use the button only to open the games.html. Previously I had called the function with the button. The Start Quiz function then started the game.htlm and the function for the flags and answers. 
+- I had the problem that the last answers with the last flag could not be checked. I had not set up the condition for counting my flagNumber correctly in my If methods. After adjusting the condition, I was able to fix the error.
 
 ### Known unsolved Bugs
 
