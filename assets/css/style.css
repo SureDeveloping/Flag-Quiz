@@ -54,8 +54,8 @@ body {
     text-align: left;
     font-size: clamp(30px, 20px, 250px);
     font-weight: 400;
-    margin: 20px;
-    width: 270px;
+    margin: 20px 10px;
+    width: 260px;
     border-radius: 25px;
     text-align: center;
     border-color: black;
@@ -77,8 +77,8 @@ body {
     text-align: left;
     font-size: clamp(30px, 20px, 250px);
     font-weight: 400;
-    margin: 20px;
-    width: 270px;
+    margin: 20px 10px;
+    width: 260px;
     border-radius: 25px;
     text-align: center;
     border-color: black;
