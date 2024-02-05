@@ -79,4 +79,24 @@ function loadAnswers(flagNumber) {
     answer3.innerText = flags[flagNumber].answers[2];
   }
 
+  const answer1 = document.getElementById('answer1');
+  const answer2 = document.getElementById('answer2');
+  const answer3 = document.getElementById('answer3');
+
+/**Function to check the clicked answer
+ * @param {*} answerNumber 
+ */
+function checkAnswer(answerNumber) {
+    console.log('answer number chosen: ', answerNumber);
+ 
+    let correctAnswer = flags[flagNumber].correct;
+    if (answerNumber === correctAnswer) {
+       // if correct 
+        alert("Thats right!");
+        console.log("correctAnswer");
+    } else {
+        alert("Thats worng!");
+        console.log("worngAnswer");
+    }
+} 
   startQuiz()
