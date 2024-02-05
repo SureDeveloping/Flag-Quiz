@@ -73,9 +73,9 @@ function loadFlags(flagNumber) {
  * @param {int} flagNumber
  */
 function loadAnswers(flagNumber) {
-    answer1.innerText = flags[flagNumber].answers[0];
-    answer2.innerText = flags[flagNumber].answers[1];
-    answer3.innerText = flags[flagNumber].answers[2];
+    answer1.innerText = `A:  ${flags[flagNumber].answers[0]}`;
+    answer2.innerText = `B:  ${flags[flagNumber].answers[1]}`;
+    answer3.innerText = `C:  ${flags[flagNumber].answers[2]}`;
   }
 
   const answer1 = document.getElementById('answer1');
