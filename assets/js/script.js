@@ -5,19 +5,16 @@ let flagNumber = 0;
 function startQuiz(link) {
     loadFlags(flagNumber);
     loadAnswers(flagNumber);
-    if (flagNumber <= quizLength) {
-        flagNumber++;
-    }
 }
 
 /** Function starts the next question, loads a flag and answers by clicking on the corresponding button
  */
 function nextFlag() {
-    loadFlags(flagNumber);
-    loadAnswers(flagNumber);
-    if (flagNumber <= quizLength) {
-        flagNumber++;
-    }
+    flagNumber++;
+    if (flagNumber < quizLength) {
+        loadFlags(flagNumber);
+        loadAnswers(flagNumber);
+}
 }
 
 /** Function opens the rules page by clicking on the corresponding button
@@ -39,7 +36,7 @@ const flags = [
     "answers": [
         "Spain", "Belgium", "Great Britain"
     ],
-    "correct": 2
+    "correct": 3
     },
 
     {
@@ -89,14 +86,19 @@ function loadAnswers(flagNumber) {
 function checkAnswer(answerNumber) {
     console.log('answer number chosen: ', answerNumber);
  
-    let correctAnswer = flags[flagNumber].correct;
+    let correctAnswer = flags[flagNumber].correct -1;
     if (answerNumber === correctAnswer) {
        // if correct 
         alert("Thats right!");
         console.log("correctAnswer");
     } else {
-        alert("Thats worng!");
-        console.log("worngAnswer");
+        alert("Thats wrong");
+        console.log("Incorrect answer");
+    }
+    flagNumber++;
+    if (flagNumber < quizLength) {
+        loadFlags(flagNumber);
+        loadAnswers(flagNumber);
     }
 } 
   startQuiz();
