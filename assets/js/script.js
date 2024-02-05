@@ -5,7 +5,7 @@ let flagNumber = 0;
 function startQuiz(link) {
     loadFlags(flagNumber);
     loadAnswers(flagNumber);
-    if (flagNumber < quizLength) {
+    if (flagNumber =< quizLength) {
         flagNumber++;
     }
 }
@@ -15,7 +15,7 @@ function startQuiz(link) {
 function nextFlag() {
     loadFlags(flagNumber);
     loadAnswers(flagNumber);
-    if (flagNumber < quizLength) {
+    if (flagNumber =< quizLength) {
         flagNumber++;
     }
 }
