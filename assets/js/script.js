@@ -1,4 +1,3 @@
-console.log('script loaded');
 let flagNumber = 0;
 
 /** Function starts the quiz by clicking on the corresponding button
@@ -67,9 +66,7 @@ const quizLength = flags.length;
  * @param {int} flagNumber
  */
 function loadFlags(flagNumber) {
-    console.log("load flag called");
     document.getElementById("flag").src = flags[flagNumber].flag;
-    console.log("flags function"); 
 }
 
 /**
@@ -77,11 +74,9 @@ function loadFlags(flagNumber) {
  * @param {int} flagNumber
  */
 function loadAnswers(flagNumber) {
-    console.log("load answers called")
     answer1.innerText = flags[flagNumber].answers[0];
     answer2.innerText = flags[flagNumber].answers[1];
     answer3.innerText = flags[flagNumber].answers[2];
-    console.log("answer function"); 
   }
 
   startQuiz()
