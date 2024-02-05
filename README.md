@@ -93,11 +93,15 @@ Images used are from the site https://www.freepik.com/.
 Here are the Wireframes:
 Wireframe for the start page:
 
+![](assets/images/readme/wireframe-start.png "Wireframe from Start page") 
+
+Wireframe for rules page:
+
+![](assets/images/readme/wireframe-rules.png "Wireframe from Rules page") 
+
 Wireframe for game page:
 
-Wireframe for a win:
-
-Wireframe for a loose:
+![](assets/images/readme/wireframe-game.png "Wireframe from Game page") 
 
 ### Features
 
@@ -175,7 +179,6 @@ I have submitted my project but have not received any feedback yet.
 ### Validator tests
 
 HTML
-
 
 Css
 
