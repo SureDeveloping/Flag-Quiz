@@ -176,6 +176,7 @@ I have submitted my project but have not received any feedback yet.
 
 HTML
 
+
 Css
 
 JS
@@ -185,6 +186,8 @@ JS
 ### Solved Bugs
 - After I clicked the start quiz button the games.html opened but the questions and answers were not loaded. I had the assumption that it is the browser that has to load the page first before it can load the functions for the flag and for the answers. So I first tried to solve this problem with setTimeout() and with a callback function. Waiting for the DOM was not successful either. Solution was to call the function in the JS below and use the button only to open the games.html. Previously I had called the function with the button. The Start Quiz function then started the game.htlm and the function for the flags and answers. 
 - I had a problem that the correct answers were not displayed as correct. This had to do with the position of the if method that increments the flag number. The incrementing may only take place when an answer has been submitted by the player. If the incrementing is done earlier, the check answer function picks up the wrong values from the flags array. 
+- I had in the index.html values for the height and the width when img are not allowed. This was the result of a W3validator check. Therefore these were changed. 
+- I had an empty src value in the img placeholder on the game.html page. This was also a result of the W3validator check. The value was therefore set to 0. 
 
 ### Known unsolved Bugs
 
