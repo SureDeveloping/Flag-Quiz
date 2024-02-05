@@ -22,7 +22,7 @@ body {
 .container-headline h2 {
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
-    font-size: clamp(5vh, 30px, 300px);
+    font-size: clamp(4vh, 30px, 300px);
 }
 
 .container-headline {
