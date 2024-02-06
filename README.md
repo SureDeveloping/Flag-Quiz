@@ -220,6 +220,8 @@ The content of this project was written by Stephan Sure.
 - https://www.w3schools.com/jsref/event_onclick.asp  - to lern how to make the buttons work
 - https://www.youtube.com/watch?v=xVMkFJZhZYU&t=283s - to lern how to make the buttons work
 - https://werner-zenk.de/javascript/html-button_ueber_javascript_eine_funktion_zuweisen.php - to lern how to make the buttons work
+- https://www.youtube.com/watch?v=P6UgYq3J3Qs - to learn more about position absolut and relative
+- https://www.youtube.com/shorts/9cSL5dP4rgM - to learn more about position absolut and relative
 - https://stackoverflow.com/
 - https://www.w3schools.com/css/
 - geekforgeeks
