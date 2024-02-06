@@ -216,6 +216,7 @@ The content of this project was written by Stephan Sure.
 - https://www.youtube.com/watch?v=riDzcEQbX6k - How to bulid a quizz with java script
 - https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF  - How to bulid a quizz with java script
 - https://www.youtube.com/watch?v=PBcqGxrr9g8 - How to bulid a quizz with java script
+- https://developer.mozilla.org/en-US/docs/Web/API/setTimeout - Timeout function
 - https://stackoverflow.com/
 - https://www.w3schools.com/css/
 - geekforgeeks

@@ -24,13 +24,11 @@ function nextFlag() {
 function rules(link) {
     location.href = "rules.html";
 }
-
 /** Function opens the homepage, index.html by clicking on the corresponding button
  */
 function home(link) {
     location.href = "index.html";
 }
-
 // Flags with answer Options
 const flags = [
     {
@@ -40,7 +38,6 @@ const flags = [
     ],
     "correct": 3
     },
-
     {
     "flag": "assets/images/germany-flag.webp",
     "answers": [
@@ -48,7 +45,6 @@ const flags = [
     ],
     "correct": 1
     },
-
     {
     "flag": "assets/images/netherlands-flag.webp",
     "answers": [
@@ -56,7 +52,6 @@ const flags = [
     ],
     "correct": 2
     }, 
-
     {
     "flag": "assets/images/albania-flag.webp",
     "answers": [
@@ -64,7 +59,6 @@ const flags = [
     ],   
     "correct": 2
     },
-
     {
     "flag": "assets/images/austria-flag.webp",
     "answers": [
@@ -80,7 +74,6 @@ const flags = [
     ],
     "correct": 2
     }, 
-
     {
     "flag": "assets/images/denmark-flag.webp",
     "answers": [
@@ -88,7 +81,6 @@ const flags = [
     ],
     "correct": 1
     }, 
-
     {
     "flag": "assets/images/finland-flag.webp",
     "answers": [
@@ -96,7 +88,6 @@ const flags = [
     ],
     "correct": 3
     }, 
-
     {
     "flag": "assets/images/greece-flag.webp",
     "answers": [
@@ -104,7 +95,6 @@ const flags = [
     ],
     "correct": 2
     }, 
-
     {
     "flag": "assets/images/iceland-flag.webp",
     "answers": [
@@ -112,7 +102,6 @@ const flags = [
     ],
     "correct": 3
     }, 
-
     {
     "flag": "assets/images/luxembourg-flag.webp",
     "answers": [
@@ -120,7 +109,6 @@ const flags = [
     ],
     "correct": 2
     }, 
-
     {
     "flag": "assets/images/malta-flag.webp",
     "answers": [
@@ -128,7 +116,6 @@ const flags = [
     ],
     "correct": 1
     }, 
-
     {
     "flag": "assets/images/poland-flag.webp",
     "answers": [
@@ -136,7 +123,6 @@ const flags = [
     ],
     "correct": 2
     }, 
-
     {
     "flag": "assets/images/sweden-flag.webp",
     "answers": [
@@ -147,7 +133,6 @@ const flags = [
 ];
 
 const quizLength = flags.length;
-
 /**
  * This function loads flags option, questions 
  * @param {int} flagNumber
@@ -161,16 +146,21 @@ function loadFlags(flagNumber) {
  * @param {int} flagNumber
  */
 function loadAnswers(flagNumber) {
+    // make sure background colour is #0B34DE
+    answer1.style.backgroundColor = '#0B34DE';
+    answer2.style.backgroundColor = '#0B34DE';
+    answer3.style.backgroundColor = '#0B34DE';
+
     answer1.innerText = `A:  ${flags[flagNumber].answers[0]}`;
     answer2.innerText = `B:  ${flags[flagNumber].answers[1]}`;
     answer3.innerText = `C:  ${flags[flagNumber].answers[2]}`;
-  }
+}
 
-  const answer1 = document.getElementById('answer1');
-  const answer2 = document.getElementById('answer2');
-  const answer3 = document.getElementById('answer3');
-  const score = document.getElementById('score');
-  let scoreCount = 0;
+const answer1 = document.getElementById('answer1');
+const answer2 = document.getElementById('answer2');
+const answer3 = document.getElementById('answer3');
+const score = document.getElementById('score');
+let scoreCount = 0;
 
 /**Function to check the clicked answer
  * @param {*} answerNumber 
@@ -180,24 +170,54 @@ function checkAnswer(answerNumber) {
  
     let correctAnswer = flags[flagNumber].correct -1;
     if (answerNumber === correctAnswer) {
-       // if correct 
-        alert("Thats right!");
+       // if the user clicks the right answer, score up and change color of the buttons
         console.log("correctAnswer");
         scoreCount++;
         score.innerText = scoreCount;
 
+        if (correctAnswer === 0) {
+          answer1.style.backgroundColor = '#F0c808'
+        }
+        if (correctAnswer === 1) {
+          answer2.style.backgroundColor = '#F0c808'
+        }
+        if (correctAnswer === 2) {
+          answer3.style.backgroundColor = '#F0c808'
+        }
+
     } else {
-        alert("Thats wrong");
-        console.log("Incorrect answer");
+        // if the user clicks the wrong answer, change color of the buttons
+        if (answerNumber === 0) {
+          answer1.style.backgroundColor = '#DD1C1a'
+        }
+        if (answerNumber === 1) {
+          answer2.style.backgroundColor = '#DD1C1a'
+        }
+        if (answerNumber === 2) {
+          answer3.style.backgroundColor = '#DD1C1a'
+        }
+        // change color of the buttons to show the correct answer
+        if (correctAnswer === 0) {
+          answer1.style.backgroundColor = '#F0c808'
+        }
+        if (correctAnswer === 1) {
+          answer2.style.backgroundColor = '#F0c808'
+        }
+        if (correctAnswer === 2) {
+          answer3.style.backgroundColor = '#F0c808'
+        }
     }
 
     flagNumber++;
     if (flagNumber < quizLength) {
-        loadFlags(flagNumber);
-        loadAnswers(flagNumber);
+        // Timeout Function to give the user time to see the right or wrong answer
+        setTimeout(function() {
+            loadFlags(flagNumber);
+            loadAnswers(flagNumber);
+        }, 1000);
+                  
     } else {
-        alert('That was the last Question. If you would like to Play Again, press Quit and then Start the Quiz again.');
+        alert('That was the last Question. If you would like to Play Again, press Quit and then Start the Quiz again.');        
     }
 } 
-
   startQuiz();
