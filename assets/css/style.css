@@ -86,7 +86,7 @@ body {
     border-style: solid;
 }
 
-.button-answers-style:hover, .button-general-style:hover  {
+.button-answers-style:hover, .button-general-style:hover, .button-endgame-style:hover  {
     border-color: #F0c808;
   }
 
@@ -124,4 +124,42 @@ body {
 .question-flag img {
     height: 40%;
     width: 40%;
+}
+
+/* Styles the End of Game choose Box */
+#last-flag {
+    width: 290px;
+    height: 370px;
+    background-color: #0B34DE;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    visibility: hidden;
+}
+
+.button-endgame-style {
+    background-color: #07A0c3;
+    padding: 5px;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    font-size: clamp(30px, 20px, 250px);
+    font-weight: 400;
+    margin: 10px 10px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    
 }

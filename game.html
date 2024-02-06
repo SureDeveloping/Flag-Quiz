@@ -36,7 +36,7 @@
         </div>
 
         <div class="button-header">
-            <h2> Which country has this flag?</h2>
+            <h2 id="question-headline"> Which country has this flag?</h2>
         </div>
 
         <div class="question-flag">
@@ -54,6 +54,13 @@
         <div id="button-general">
             <button class="button-general-style" onclick="nextFlag()">Skip flag</button>
             <button class="button-general-style" onclick="home()" value="index.html">Quit</button>
+        </div>
+
+
+        <div id="last-flag">
+            <p>That was the last Flag. Would you like to play again?</p>
+            <button class="button-endgame-style" onclick="location.href='game.html'" value="game.html">Play Again</button>
+            <button class="button-endgame-style" onclick="home()" value="index.html">Quit</button>
         </div>
 
     </div>

@@ -15,7 +15,11 @@ function nextFlag() {
         loadFlags(flagNumber);
         loadAnswers(flagNumber);
     } else {
-        alert('That was the last Question. If you would like to Play Again, press Quit and then Start the Quiz again.');
+        document.getElementById("last-flag").style.visibility = "visible";
+        document.getElementById("button-general").style.visibility = "hidden";
+        document.getElementById("button-answers").style.visibility = "hidden";
+        document.getElementById("flag").style.visibility = "hidden";
+        document.getElementById("question-headline").style.visibility = "hidden";
 }
 }
 
@@ -217,7 +221,11 @@ function checkAnswer(answerNumber) {
         }, 1000);
                   
     } else {
-        alert('That was the last Question. If you would like to Play Again, press Quit and then Start the Quiz again.');        
+        document.getElementById("last-flag").style.visibility = "visible";
+        document.getElementById("button-general").style.visibility = "hidden";
+        document.getElementById("button-answers").style.visibility = "hidden";
+        document.getElementById("flag").style.visibility = "hidden";
+        document.getElementById("question-headline").style.visibility = "hidden";
     }
 } 
   startQuiz();
