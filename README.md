@@ -217,6 +217,9 @@ The content of this project was written by Stephan Sure.
 - https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF  - How to bulid a quizz with java script
 - https://www.youtube.com/watch?v=PBcqGxrr9g8 - How to bulid a quizz with java script
 - https://developer.mozilla.org/en-US/docs/Web/API/setTimeout - Timeout function
+- https://www.w3schools.com/jsref/event_onclick.asp  - to lern how to make the buttons work
+- https://www.youtube.com/watch?v=xVMkFJZhZYU&t=283s - to lern how to make the buttons work
+- https://werner-zenk.de/javascript/html-button_ueber_javascript_eine_funktion_zuweisen.php - to lern how to make the buttons work
 - https://stackoverflow.com/
 - https://www.w3schools.com/css/
 - geekforgeeks
