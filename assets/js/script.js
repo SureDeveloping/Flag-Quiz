@@ -2,7 +2,7 @@ let flagNumber = 0;
 
 /** Function starts the quiz by clicking on the corresponding button
  */
-function startQuiz(link) {
+function startQuiz() {
     loadFlags(flagNumber);
     loadAnswers(flagNumber);
 }
@@ -21,12 +21,12 @@ function nextFlag() {
 
 /** Function opens the rules page by clicking on the corresponding button
  */
-function rules(link) {
+function rules() {
     location.href = "rules.html";
 }
 /** Function opens the homepage, index.html by clicking on the corresponding button
  */
-function home(link) {
+function home() {
     location.href = "index.html";
 }
 // Flags with answer Options
