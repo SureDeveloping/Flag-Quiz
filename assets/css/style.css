@@ -108,6 +108,10 @@ body {
     padding: 10px;
     border-radius: 25px;
     color: white;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .container-rules p {
