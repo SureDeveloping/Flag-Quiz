@@ -133,7 +133,78 @@ const flags = [
         "Sweden", "Netherlands", "Spain"
     ],
     "correct": 3
-    } 
+    }, 
+    {
+    "flag": "assets/images/belgium-flag.webp",
+    "answers": [
+        "Poland", "Greece", "Belgium"
+    ],
+    "correct": 3
+    }, 
+
+    {
+    "flag": "assets/images/bulgaria-flag.webp",
+    "answers": [
+        "Bulgaria", "Germany", "Albania"
+    ],
+    "correct": 1
+    },
+
+    {
+    "flag": "assets/images/swiss-flag.webp",
+    "answers": [
+        "Poland", "Swiss", "Romania"
+    ],
+    "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/ireland-flag.webp",
+    "answers": [
+        "Poland", "Ireland", "Swiss"
+    ],
+    "correct": 2
+    }, 
+
+    {
+    "flag": "assets/images/slovenia-flag.webp",
+    "answers": [
+        "Slovenia", "Greece", "Slovakia"
+    ],
+    "correct": 3
+    }, 
+
+    {
+    "flag": "assets/images/slovakia-flag.webp",
+    "answers": [
+        "Slovenia", "Slovakia", "Spain"
+    ],
+    "correct": 2
+    }, 
+    
+    {
+    "flag": "assets/images/romania-flag.webp",
+    "answers": [
+        "Slovenia", "Slovakia", "Romania"
+    ],
+    "correct": 3
+    }, 
+       
+    {
+    "flag": "assets/images/montenegro-flag.webp",
+    "answers": [
+        "Slovenia", "Slovakia", "Montenegro"
+    ],
+    "correct": 3
+    }, 
+
+    {
+    "flag": "assets/images/czech-flag.webp",
+    "answers": [
+        "Slovenia", "Czech", "Montenegro"
+    ],
+    "correct": 3
+    }
 ];
 
 const quizLength = flags.length;
