@@ -132,7 +132,7 @@ const flags = [
     "answers": [
         "Sweden", "Netherlands", "Spain"
     ],
-    "correct": 3
+    "correct": 1
     }, 
     {
     "flag": "assets/images/belgium-flag.webp",
@@ -171,7 +171,7 @@ const flags = [
     "answers": [
         "Slovenia", "Greece", "Slovakia"
     ],
-    "correct": 3
+    "correct": 1
     }, 
 
     {
@@ -203,9 +203,31 @@ const flags = [
     "answers": [
         "Slovenia", "Czech", "Montenegro"
     ],
-    "correct": 3
+    "correct": 2
     }
 ];
+
+let shuffledFlags = [];
+/** Function shuffels all flags, for a random sequence of tho flags.
+ *
+ */
+// This is adapted from a Youtube video https://www.youtube.com/watch?v=Gfx9UV2tpLg
+function shuffleFlags(array) {
+    let usedIndexes = []; 
+
+    let i = 0;
+    while (i < array.length) {
+        let randomNumber = Math.floor(Math.random() * array.length);
+        if (!usedIndexes.includes(randomNumber)) {
+            shuffledFlags.push(array[randomNumber]);
+            usedIndexes.push(randomNumber);
+            i++;
+        }
+    }
+    console.log(shuffledFlags);
+    return shuffledFlags;
+}
+
 
 const quizLength = flags.length;
 /**
@@ -213,7 +235,7 @@ const quizLength = flags.length;
  * @param {int} flagNumber
  */
 function loadFlags(flagNumber) {
-    document.getElementById("flag").src = flags[flagNumber].flag;
+    document.getElementById("flag").src = shuffledFlags[flagNumber].flag;
 }
 
 /**
@@ -226,9 +248,9 @@ function loadAnswers(flagNumber) {
     answer2.style.backgroundColor = '#0B34DE';
     answer3.style.backgroundColor = '#0B34DE';
 
-    answer1.innerText = `A:  ${flags[flagNumber].answers[0]}`;
-    answer2.innerText = `B:  ${flags[flagNumber].answers[1]}`;
-    answer3.innerText = `C:  ${flags[flagNumber].answers[2]}`;
+    answer1.innerText = `A:  ${shuffledFlags[flagNumber].answers[0]}`;
+    answer2.innerText = `B:  ${shuffledFlags[flagNumber].answers[1]}`;
+    answer3.innerText = `C:  ${shuffledFlags[flagNumber].answers[2]}`;
 }
 
 const answer1 = document.getElementById('answer1');
@@ -243,7 +265,7 @@ let scoreCount = 0;
 function checkAnswer(answerNumber) {
     console.log('answer number chosen: ', answerNumber);
  
-    let correctAnswer = flags[flagNumber].correct -1;
+    let correctAnswer = shuffledFlags[flagNumber].correct -1;
     if (answerNumber === correctAnswer) {
        // if the user clicks the right answer, score up and change color of the buttons
         console.log("correctAnswer");
@@ -299,4 +321,6 @@ function checkAnswer(answerNumber) {
         document.getElementById("question-headline").style.visibility = "hidden";
     }
 } 
-  startQuiz();
+
+shuffleFlags(flags);
+startQuiz();
