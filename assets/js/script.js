@@ -223,7 +223,6 @@ function shuffleFlags(array) {
     return shuffledFlags;
 }
 
-
 const quizLength = flags.length;
 /**
  * This function loads flags option, questions 

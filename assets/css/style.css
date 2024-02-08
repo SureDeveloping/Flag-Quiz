@@ -24,12 +24,10 @@ body {
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
     font-size: 30px;
-  
 }
 
 .container-headline {
-    text-align: center; 
-    
+    text-align: center;   
 }
 
 /* Styles the image on the landing page */
@@ -191,11 +189,11 @@ body {
 /* Media query: larger divices (500px and up) */
 @media screen and (min-width: 500px) {
 
-.container-headline h2 {
-   line-height: 150%;
-}
+    .container-headline h2 {
+    line-height: 150%;
+    }
 
-#last-flag {
+    #last-flag {
     inset: 0;
-}
+    }
 }
