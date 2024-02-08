@@ -16,13 +16,15 @@ body {
 /* Styles the Headline */
 .container-headline h1 {
     font-family: 'Rampart One', sans-serif;
-    font-size: clamp(40px, 8vh, 700px);
+    font-size: 60px;
+    line-height: 110%;
 }
 
 .container-headline h2 {
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
-    font-size: clamp(4vh, 30px, 300px);
+    font-size: 35px;
+  
 }
 
 .container-headline {
@@ -32,8 +34,8 @@ body {
 
 /* Styles the image on the landing page */
 .container-image {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 10px auto;
 }
 
 .container-image img {
@@ -52,9 +54,9 @@ body {
     padding: 5px 5px 5px 20px;
     font-family: 'Lexend', sans-serif;
     text-align: left;
-    font-size: clamp(30px, 20px, 250px);
+    font-size: 20px;
     font-weight: 400;
-    margin: 20px 10px;
+    margin: 10px;
     width: 260px;
     border-radius: 25px;
     text-align: center;
@@ -76,9 +78,9 @@ body {
     padding: 5px 5px 5px 20px;
     font-family: 'Lexend', sans-serif;
     text-align: left;
-    font-size: clamp(30px, 20px, 250px);
+    font-size: 20px;
     font-weight: 400;
-    margin: 20px 10px;
+    margin: 10px 10px;
     width: 260px;
     border-radius: 25px;
     text-align: center;
@@ -90,22 +92,36 @@ body {
 
 .button-answers-style:hover, .button-general-style:hover, .button-endgame-style:hover  {
     border-color: #F0c808;
-  }
+}
 
+/* Styles the question over the Flag and the scoure */
 .button-header {
     text-align: center;
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
-    font-size: clamp(3vh, 30px, 300px);
+    font-size: 20px;
+}
+
+.button-header h3 {
+    font-size: 25px;
+}
+
+.button-header h2 {
+    color: #0B34DE;
+}
+
+#score {
+    color: black;
+    font-size: 120%;
 }
 
 /* Styles the rules page */
 .container-rules {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 10px auto;
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
-    font-size: clamp(2.5vh, 35px, 200px);
+    font-size: 20px;
     background-color: #0B34DE;
     padding: 10px;
     border-radius: 25px;
@@ -124,31 +140,32 @@ body {
 .question-flag {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding: 10px;
 }
 
 .question-flag img {
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 90%;
+    max-width: 500px;
 }
 
 /* Styles the End of Game choose Box */
 #last-flag {
-    width: 290px;
-    height: 370px;
+    width: 250px;
+    height: 240px;
     background-color: #0B34DE;
     color: white;
     text-align: center;
     padding: 10px;
     font-family: 'Lexend', sans-serif;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
     border-radius: 25px;
     border-color: black;
     border-width: 5px;
     border-style: solid;
     position: absolute;
-    inset: 0;
+    inset: 60px 0 0 0;
     margin: auto;
     visibility: hidden;
 }
@@ -158,9 +175,9 @@ body {
     padding: 5px;
     font-family: 'Lexend', sans-serif;
     text-align: center;
-    font-size: clamp(30px, 20px, 250px);
+    font-size: 20px;
     font-weight: 400;
-    margin: 10px 10px;
+    margin: 10px;
     width: 200px;
     border-radius: 25px;
     text-align: center;
@@ -168,4 +185,16 @@ body {
     border-width: 5px;
     border-style: solid;
     cursor: pointer;    
+}
+
+/* Media query: larger divices (500px and up) */
+@media screen and (min-width: 500px) {
+
+.container-headline h2 {
+   line-height: 150%;
+}
+
+#last-flag {
+    inset: 0;
+}
 }
