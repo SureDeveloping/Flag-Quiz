@@ -215,15 +215,15 @@ HTML
 
 The test result from the W3 validator test for the index.html 
 
-![](assets/images/readme/index.png "Screenshort from test of the index.html") 
+![](assets/images/readme/w3-index.png "Screenshort from test of the index.html") 
 
 The test result from the W3 validator test for the rules.html 
 
-![](assets/images/readme/rules.png "Screenshort from test of the rules.html") 
+![](assets/images/readme/w3-rules.png "Screenshort from test of the rules.html") 
 
 The test result from the W3 validator test for the game.html 
 
-![](assets/images/readme/game.png "Screenshort from test of the game.html") 
+![](assets/images/readme/w3-game.png "Screenshort from test of the game.html") 
 
 Css
 
