@@ -273,35 +273,35 @@ function checkAnswer(answerNumber) {
         score.innerText = scoreCount;
 
         if (correctAnswer === 0) {
-          answer1.style.backgroundColor = '#F0c808'
+          answer1.style.backgroundColor = '#F0c808';
         }
         if (correctAnswer === 1) {
-          answer2.style.backgroundColor = '#F0c808'
+          answer2.style.backgroundColor = '#F0c808';
         }
         if (correctAnswer === 2) {
-          answer3.style.backgroundColor = '#F0c808'
+          answer3.style.backgroundColor = '#F0c808';
         }
 
     } else {
         // if the user clicks the wrong answer, change color of the buttons
         if (answerNumber === 0) {
-          answer1.style.backgroundColor = '#DD1C1a'
+          answer1.style.backgroundColor = '#DD1C1a';
         }
         if (answerNumber === 1) {
-          answer2.style.backgroundColor = '#DD1C1a'
+          answer2.style.backgroundColor = '#DD1C1a';
         }
         if (answerNumber === 2) {
-          answer3.style.backgroundColor = '#DD1C1a'
+          answer3.style.backgroundColor = '#DD1C1a';
         }
         // change color of the buttons to show the correct answer
         if (correctAnswer === 0) {
-          answer1.style.backgroundColor = '#F0c808'
+          answer1.style.backgroundColor = '#F0c808';
         }
         if (correctAnswer === 1) {
-          answer2.style.backgroundColor = '#F0c808'
+          answer2.style.backgroundColor = '#F0c808';
         }
         if (correctAnswer === 2) {
-          answer3.style.backgroundColor = '#F0c808'
+          answer3.style.backgroundColor = '#F0c808';
         }
     }
 
