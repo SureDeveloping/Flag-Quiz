@@ -195,6 +195,7 @@ JS
 - I had an empty src value in the img placeholder on the game.html page. This was also a result of the W3validator check. The value was therefore set to 0. 
 - I had an error in the console. I only had one JS file. Therefore, when opening the index.html an image was already tried to be loaded which is only visible on the game html page. This has caused an error. With the help of the tutor team I was able to fix the error by creating a separate JS file for each html file. 
 - I had an error in the console. A favicon could not be loaded. I recreated the icon and replaced the icon file. 
+- I had a mistake with my scr value for the placeholder of my flag images. When I left it blank in the html, I got an error in the W3 validator. If I simply inserted a placeholder I got an error in the console. The solution was to use a link to an existing image. This is later overwritten by Javascript. So the function is not disturbed.
 
 ### Known unsolved Bugs
 
