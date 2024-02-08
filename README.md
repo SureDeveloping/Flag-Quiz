@@ -194,6 +194,7 @@ JS
 - I had in the index.html values for the height and the width when img are not allowed. This was the result of a W3validator check. Therefore these were changed. 
 - I had an empty src value in the img placeholder on the game.html page. This was also a result of the W3validator check. The value was therefore set to 0. 
 - I had an error in the console. I only had one JS file. Therefore, when opening the index.html an image was already tried to be loaded which is only visible on the game html page. This has caused an error. With the help of the tutor team I was able to fix the error by creating a separate JS file for each html file. 
+- I had an error in the console. A favicon could not be loaded. I recreated the icon and replaced the icon file. 
 
 ### Known unsolved Bugs
 
