@@ -83,7 +83,7 @@ body {
     margin: 10px 10px;
     width: 260px;
     border-radius: 25px;
-    text-align: center;
+    text-align: center;S
     border-color: black;
     border-width: 5px;
     border-style: solid;
@@ -92,6 +92,7 @@ body {
 
 .button-answers-style:hover, .button-general-style:hover, .button-endgame-style:hover  {
     border-color: #F0c808;
+    box-shadow: 5px 5px 5px black;
 }
 
 /* Styles the question over the Flag and the scoure */
