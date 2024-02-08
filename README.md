@@ -42,16 +42,16 @@ As a first time user of the website, you want to:
 - play a bug-free game.
 - play a self-explanatory game.
 - be able to navigate the site intuitively.
-- know the rules of the game.
-- find a Highscoure display on the site.
+- know how to play the of the game.
+- find a Score point display on the site.
 - have a resolution of the question displayed.
-- be able to use the site from different end devices.
 - be able to use the website from any device.
 - lern which country has which flag.
 
 As a frequent user of the website, you want to:
 - repeat the game experience.
 - improve and learn more about the countries and their flags.
+- have randomly mixed questions or flags, so you don't know the order.
 
 Objectives of the website operator is to:
 - provide an easy to navigate website. 
@@ -64,7 +64,7 @@ How this requirements are met:
 - Aria labels, alt text and semantic elements will be used.
 - Sans-serif font are used.
 - All important elements can be found on the main page without having to navigate a lot.
-- There is always the possibility to cancel the game.
+- There is always the possibility to quit the game.
 - There is a link to the rules of the game.
 
 ## Design
@@ -110,21 +110,45 @@ Wireframe for game page:
 The website is a Flag Quiz. Visitors can test their knowledge of countries and their flags. There are 3 main pages. The landing page provides an overview of all the content on the site for the visitor. The second page is the "How to play" page, which explains the rules.  The third page is the game page where the quiz is played.
 
 - Landing Page:
-There is a heading at the top of the landing page. The Flag Quiz.  Below it is a picture of the flags of the world. Followed by two buttons. The first opens a Page which is showing the rules of the game and the second starts the game. There is visual feedback when the mouse is moved over the button. 
+There is a heading and subheading at the top of the landing page. Below it is a picture of the flags of the world. Followed by two buttons. The first opens the "How to play" Page which is showing the rules of the game and the second button starts the game. There is visual feedback when the mouse is moved over the button. 
+
+![](assets/images/readme/index.png "Screenshort from the index.html page") 
 
 - How to Play Page:
-Open is an overview of how to play on the website. Below is the text with the rules.
-Below this text are two clickable buttons. The first takes you back to the main page. A click on the second button will start the game.
+There is a heading and subheading at the top of the rules page, like on index.html. Underneath you can find a text which describes how the game can be played. Below this text are two clickable buttons. The first takes you back to the main page. A click on the second button will start the game.
+
+![](assets/images/readme/rules.png "Screenshort from the rules.html page") 
 
 - Game Page:
-At the top of the game page is the scoreboard. It shows how many correct questions the player has answered. Below this, the graphic of a landing position is displayed. Followed by the question. Which country does this flag belong to? This is followed by the possible answers and two further buttons. Next Question and Quit. Quit always takes the user directly back to the landing page. With Next question he can skip a question or open the next question after he has answered a question. If the player has clicked on the button with the correct answer. This is indicated by changing the color of the button. If he has clicked an incorrect answer, the color of the button also changes. The wrong answer turns red, the correct answer yellow.
+There is also the main heading on the game.html page. Below that is the score counter. This is automatically counted up if the answer is correct. Below the score counter is the question "Which country has this flag?" followed by alternating flags, currently 23 that can be guessed. Under the flags there are 3 answer buttons, each with one possible answer. Finally, there are 2 more buttons. The first allows the user to skip a flag. The second button can be used to cancel the game at any time and return to the start page. 
+
+![](assets/images/readme/games.png "Screenshort from the games.html page") 
+
+A correct answer is highlighted with color in the answer button.
+
+![](assets/images/readme/game-right.png "Screenshort if a right answer has been choosen") 
+
+f the player answers incorrectly, the correct answer is shown so that the player can learn what the correct answer would have been. 
+
+![](assets/images/readme/game-wrong.png "Screenshort if a wrong answer has been choosen") 
+
+After the last question or flag, the player is shown this as a message. He is asked whether he would like to play again or would rather stop. By clicking the Stop button, the player is returned to the Index.html page. If you click on Play again, the game starts again. 
+
+![](assets/images/readme/game-end.png "Screenshort of the end of game text") 
+
+- Future Implementations:
+    - I would also randomize the wrong answers for more variety. Now the same answers are always in the same position for each flag. Shuffling would provide more variety. 
+    - In addition to the signaling of the correct and incorrect answer by the colors in the button, an additional signal tone could be played for correct and incorrect. 
+    - The whole game can be expanded with more flags. These could then be divided up according to regions in the world, for example according to continents. In this way, the difficulty of the game can be adjusted and the countries of a region can be learned specifically.
+    - The game could also be expanded with other things by which you have to recognize a country. For example, the outline of a country's borders on the map or the national anthem are possible. 
+
 
 ### Accessibility
 
 To ensure Accessibility the following things were done:
 - I used semantic HTML
--### I used descriptive alt attributes for images
--### I provided information for screen readers
+- I used descriptive alt attributes for images
+- I provided information for screen readers
 - I used good color contrast and a tested color palette
 
 ## Technologies Used
@@ -161,18 +185,25 @@ The page was tested on different ways and different errors came to light.
 
 ### Manual Testing
 
-I tested all the links and the Form. This was done during the hole prozess. This was done repeatedly throughout the project. A detailed description of the bugs can be found in solved and unsolved bugs.
+I tested all the links and the Form. This was done during the hole prozess while creating this project. A detailed description of the bugs can be found in solved and unsolved bugs.
 
 ### Chrom Developer Tools
 
 - I used Def-tolls to check if the side is working on different screen sizes.
 - I used Lighthouse to test my webside. 
 
-This opimisation I did afterwards:
-- I comprimised the pictures.
-- Image of the Lighthouse test result: 
+Result of the Lighthouse test for the index.html.
 
-## Screenshots der TESTS!!!
+![](assets/images/readme/lh-index.png "Screenshort lighthouse test for the index.html") 
+
+Result of the Lighthouse test for the rules.html.
+
+![](assets/images/readme/lh-rules.png "Screenshort lighthouse test for the rules.html") 
+
+Result of the Lighthouse test for the games.html.
+
+![](assets/images/readme/lh-game.png "Screenshort lighthouse test for the game.html") 
+
 
 ### Slack peer groupe rewiew
 
@@ -182,29 +213,61 @@ I have submitted my project but have not received any feedback yet.
 
 HTML
 
+The test result from the W3 validator test for the index.html 
+
+![](assets/images/readme/index.png "Screenshort from test of the index.html") 
+
+The test result from the W3 validator test for the rules.html 
+
+![](assets/images/readme/rules.png "Screenshort from test of the rules.html") 
+
+The test result from the W3 validator test for the game.html 
+
+![](assets/images/readme/game.png "Screenshort from test of the game.html") 
+
 Css
+
+The test result from the W3 css validator test.
+
+![](assets/images/readme/css.png "Screenshort from test of the game.html") 
 
 JS
 
-### Screenshots der TESTS!!!
+The test result from JSHint for the index.js.
+
+![](assets/images/readme/js-index.png "Screenshort from test of the index.js") 
+
+The test result from JSHint for the rules.js.
+
+![](assets/images/readme/js-rules.png "Screenshort from test of the rules.js") 
+
+The test result from JSHint for the script.js.
+
+![](assets/images/readme/js-script.png "Screenshort from test of the script.js") 
+
+The test result of "Am I Responsive?"
+
+![](assets/images/readme/amiresponsice.png "Screenshort from test of amiresponsice") 
+
 
 ### Solved Bugs
-- After I clicked the start quiz button the games.html opened but the questions and answers were not loaded. I had the assumption that it is the browser that has to load the page first before it can load the functions for the flag and for the answers. So I first tried to solve this problem with setTimeout() and with a callback function. Waiting for the DOM was not successful either. Solution was to call the function in the JS below and use the button only to open the games.html. Previously I had called the function with the button. The Start Quiz function then started the game.htlm and the function for the flags and answers. 
+- After I clicked the start quiz button the games.html opened but the questions and answers were not loaded. I had the assumption that it is the browser that has to load the page first before it can load the functions for the flag and for the answers. So I first tried to solve this problem with setTimeout() and with a callback function. Waiting for the DOM was not successful either. Solution was to call the function in the Js below the code and use the button only to open the games.html. Previously I had called the function with the button. The Start Quiz function then started the game.html and the function for the flags and answers. 
 - I had a problem that the correct answers were not displayed as correct. This had to do with the position of the if method that increments the flag number. The incrementing may only take place when an answer has been submitted by the player. If the incrementing is done earlier, the check answer function picks up the wrong values from the flags array. 
 - I had in the index.html values for the height and the width when img are not allowed. This was the result of a W3validator check. Therefore these were changed. 
 - I had an empty src value in the img placeholder on the game.html page. This was also a result of the W3validator check. The value was therefore set to 0. 
-- I had an error in the console. I only had one JS file. Therefore, when opening the index.html an image was already tried to be loaded which is only visible on the game html page. This has caused an error. With the help of the tutor team I was able to fix the error by creating a separate JS file for each html file. 
+- I had an error in the console. I only had one JS file. Therefore, when opening the index.html an image was already tried to be loaded which is only visible on the game html page. This has caused an error. With the help of the tutor team I was able to fix the error by creating a separate Js file for each html file. 
 - I had an error in the console. A favicon could not be loaded. I recreated the icon and replaced the icon file. 
-- I had a mistake with my scr value for the placeholder of my flag images. When I left it blank in the html, I got an error in the W3 validator. If I simply inserted a placeholder I got an error in the console. The solution was to use a link to an existing image. This is later overwritten by Javascript. So the function is not disturbed.
+- I had a mistake with my scr value for the placeholder of my flag images. When I left it blank in the html, I got an error in the W3 validator. If I simply inserted a placeholder I got an error in the console. The solution was to use a link to an existing image. This is later overwritten by Javascript. Therefore, the correct link at this point does not affect the game.
 
 ### Known unsolved Bugs
+- There are no known unsolved problems.
 
 ## Credits
 
 ### Code Used
 - I used the Asterisk wildcard selector from the Love running project.
 - I used the fonts from my Boradgame Bar Bonn project
-- ## I love maths PP2 - code institute ????
+- I have informed myself about some functions in YoutuBe Tutors. I have adapted functions from here. The videos I watched are listed under Learning Materials. 
 
 ### Content on the website
 
@@ -235,7 +298,7 @@ The content of this project was written by Stephan Sure.
 I like to Thank the follow person for the help during the project:
 - My Code Institute Mentor Spencer Barriball
 - The Tutor Support team at Code Institute
-- Kristyna my Cohort Facilitator for advice and mental support
+- All the people who make their knowledge available for free on YouTube. 
 
 ** This project is for educational use only and was created for the Code Institute course Full stack software development by Stephan Sure **
 
