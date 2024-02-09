@@ -29,16 +29,18 @@
             <h1> The Flag Quiz </h1>
         </div>
        
+        <!-- Score and Question -->
         <div class="button-header">
             <h2> Your Score: <span id="score">0</span> </h2>
             <h3 id="question-headline"> Which country has this flag?</h3>   
         </div>
 
+        <!-- Different flags -->
         <div class="question-flag">
             <img id="flag" src="assets/images/germany-flag.webp" alt="Different country flags are displayed here. The matching country should now be selected.">
         </div>
 
-        <!-- Conatiner for generel Buttons -->
+        <!-- Conatiner for answer Buttons -->
          <div id="button-answers">
             <button class="button-answers-style" id="answer1" onclick="checkAnswer(0)"></button>
             <button class="button-answers-style" id="answer2" onclick="checkAnswer(1)"></button>
@@ -51,6 +53,7 @@
             <button class="button-general-style" onclick="home()" value="index.html">Quit</button>
         </div>
 
+        <!-- End of the game Menu-->
         <div id="last-flag">
             <p>That was the last Flag. Would you like to play again?</p>
             <button class="button-endgame-style" onclick="location.href='game.html'" value="game.html">Play Again</button>

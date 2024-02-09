@@ -14,6 +14,8 @@ function nextFlag() {
     if (flagNumber < quizLength) {
         loadFlags(flagNumber);
         loadAnswers(flagNumber);
+
+         // Makes end of game menu visible and elements of the game invisible
     } else {
         document.getElementById("last-flag").style.visibility = "visible";
         document.getElementById("button-general").style.visibility = "hidden";
@@ -246,6 +248,7 @@ function loadAnswers(flagNumber) {
     answer3.innerText = `C:  ${shuffledFlags[flagNumber].answers[2]}`;
 }
 
+// Variables of the 3 answer options and of the score
 const answer1 = document.getElementById('answer1');
 const answer2 = document.getElementById('answer2');
 const answer3 = document.getElementById('answer3');
@@ -260,7 +263,7 @@ function checkAnswer(answerNumber) {
 
     let correctAnswer = shuffledFlags[flagNumber].correct - 1;
     if (answerNumber === correctAnswer) {
-        // if the user clicks the right answer, score up and change color of the buttons
+        // If the user clicks the right answer, score up and change color of the buttons
         console.log("correctAnswer");
         scoreCount++;
         score.innerText = scoreCount;
@@ -306,6 +309,7 @@ function checkAnswer(answerNumber) {
             loadAnswers(flagNumber);
         }, 1000);
 
+        // Makes end of game menu visible and elements of the game invisible
     } else {
         document.getElementById("last-flag").style.visibility = "visible";
         document.getElementById("button-general").style.visibility = "hidden";
