@@ -243,5 +243,5 @@ I like to Thank the follow person for the help during the project:
 - My Code Institute Mentor Spencer Barriball
 - The Tutor Support team at Code Institute
 - All the people who make their knowledge available for free on YouTube.
+
 **This project is for educational use only and was created for the Code Institute course Full stack software development by Stephan Sure**
-Co
