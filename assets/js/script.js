@@ -219,7 +219,6 @@ function shuffleFlags(array) {
             i++;
         }
     }
-    console.log(shuffledFlags);
     return shuffledFlags;
 }
 
