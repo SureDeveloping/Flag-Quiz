@@ -259,7 +259,6 @@ let scoreCount = 0;
  * @param {*} answerNumber 
  */
 function checkAnswer(answerNumber) {
-    console.log('answer number chosen: ', answerNumber);
 
     let correctAnswer = shuffledFlags[flagNumber].correct - 1;
     if (answerNumber === correctAnswer) {
