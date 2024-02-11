@@ -106,7 +106,7 @@ const flags = [
     {
         "flag": "assets/images/luxembourg-flag.webp",
         "answers": [
-            "Malta", "luxembourg", "Iceland"
+            "Malta", "Luxembourg", "Iceland"
         ],
         "correct": 2
     },
